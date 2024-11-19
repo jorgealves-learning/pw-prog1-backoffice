@@ -4,5 +4,7 @@
 
 ## 0.2.0 Building a comission function to auto calculate the with the clients rates. 
 
+## 0.3.0 Comission auto transfer has been added to the feature. Amount is auto transfered to client after payment.
+
 
 

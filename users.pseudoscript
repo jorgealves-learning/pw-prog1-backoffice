@@ -21,3 +21,4 @@ funcao AddNewUser(email, password):
     cada recibo em Billing.Processar_pagamentos.recibos[User.email]
         imprime("{User.Email}
              {Processar_pagamento.recibos[User.Email].data}
+             {Processar_pagamento.recibos[User.Email].preco_final}

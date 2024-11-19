@@ -1,3 +1,8 @@
 importar Users como user # importa o modelo de criação de users
 
 all_user = Users.User()
+
+modelo Processar_pagamento:
+    construtor(preco_final, comm):
+    Comissao.comm = comm
+    Processar_pagamento.recibos = ()

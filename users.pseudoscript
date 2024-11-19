@@ -18,3 +18,4 @@ funcao AddNewUser(email, password):
          User.listausers[User.email] = User.password
 
  funcao ListarPedidos()
+    cada recibo em Billing.Processar_pagamentos.recibos[User.email]

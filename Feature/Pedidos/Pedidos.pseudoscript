@@ -1,1 +1,7 @@
 modelo Pedidos:
+
+funcao envia(Carrinho.ticket, restaurante, ticket):
+    messagem.restaurante = imprime("Ordem ticket: {Carrinho.ticket}")
+
+    cada restaurante em Carrinho.ticket:
+    imprime({messagem.restaurante})

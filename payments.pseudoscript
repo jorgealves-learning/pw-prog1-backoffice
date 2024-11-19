@@ -1,0 +1,3 @@
+importar Users como user # importa o modelo de criação de users
+
+all_user = Users.User()

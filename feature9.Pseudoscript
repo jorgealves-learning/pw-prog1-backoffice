@@ -1,0 +1,1 @@
+imprime ("{Comida} - " + Restaurantes.Lista.Restaurante[1].Comidas[0] + " €")

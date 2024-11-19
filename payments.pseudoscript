@@ -7,7 +7,22 @@ modelo Processar_pagamento:
     Comissao.comm = comm
     Processar_pagamento.recibos = ()
 
+    funcao Pagar(ticket):
+        preco_final = 0   
+            
+        para cada prato, preco em ticket:
+            preco_final += preco
 
+            imprime("O total do seu carrinho é de {preco_final}. Vamos proceder ao pagamento")
+                entrada("Escolhe uma opcao de pagamento
+                        1. MB
+                        2. APPLE PAY" , opcao)
+                    se opcao == 1
+                        imprime("Pagamento por Multibanco feito.")
+                            ticket[estado] == TRUE
+                            criar_recibo()
+                    se opcao != 1 OU opcao != 2
+                        crash("Tem de inerir um método de pagamento")
 
 
 

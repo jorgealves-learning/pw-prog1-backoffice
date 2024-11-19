@@ -43,13 +43,12 @@ modelo Processar_pagamento:
                 imprime("
                         ====== RECIBO DE {Processar_pagamento.recibos[email].restaurante} ======
                         =============================================
-                        {Processar_pagamento.recibos[email].email}
-                        {Processar_pagamento.recibos[email].data}
+                        ============ {Processar_pagamento.recibos[email].email} ============
+                        ============ {Processar_pagamento.recibos[email].data} ============
                         {Processar_pagamento.recibos[email].preco_final}
                         ")
 
             transferir_comm(preco_final)
-
 
 
   funcao calcular_comm(preco_final):

@@ -39,6 +39,7 @@ modelo Processar_pagamento:
 
     funcao criar_recibo():
             verificar_pagamento()
+            
             Processar_pagamento.recibos[email].valor = (ticket)
                 imprime("
                         ====== RECIBO DE {Processar_pagamento.recibos[email].restaurante} ======

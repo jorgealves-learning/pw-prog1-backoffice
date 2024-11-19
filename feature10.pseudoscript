@@ -1,0 +1,1 @@
+cada Comida em Restaurantes.Lista.Restaurante.Menu() ONDE Restaurantes.Lista.Restaurante[1].Comidas[1] == "Ativo":

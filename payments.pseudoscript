@@ -12,7 +12,7 @@ modelo Processar_pagamento:
 
 
   funcao calcular_comm(preco_final):
-        resultado = preco_final / 10
+        resultado = preco_final / 15
         Comissao.comm = float(preco_final - resultado)
 
     funcao transferir_comm(comm):

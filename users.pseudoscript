@@ -19,3 +19,4 @@ funcao AddNewUser(email, password):
 
  funcao ListarPedidos()
     cada recibo em Billing.Processar_pagamentos.recibos[User.email]
+        imprime("{User.Email}

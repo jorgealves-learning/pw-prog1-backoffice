@@ -9,3 +9,5 @@ modelo User:
 funcao AddNewUser(email, password):
         User.email = email
         User.password = password
+        se User.email EM User.listausers.chaves():
+            crash("O email já existe. Tente Novamente")

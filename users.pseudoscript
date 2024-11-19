@@ -22,3 +22,5 @@ funcao AddNewUser(email, password):
         imprime("{User.Email}
              {Processar_pagamento.recibos[User.Email].data}
              {Processar_pagamento.recibos[User.Email].preco_final}
+             {Processar_pagamento.recibos[User.Email].restaurante}"
+                        )

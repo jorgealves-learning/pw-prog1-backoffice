@@ -21,6 +21,10 @@ modelo Processar_pagamento:
                         imprime("Pagamento por Multibanco feito.")
                             ticket[estado] == TRUE
                             criar_recibo()
+                    se opcao == 2
+                        imprime("Pagamento por Apple Pay feito.")
+                            ticket[estado] == TRUE
+                            criar_recibo()
                     se opcao != 1 OU opcao != 2
                         crash("Tem de inerir um método de pagamento")
 

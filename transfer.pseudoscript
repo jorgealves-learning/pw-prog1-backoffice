@@ -1,0 +1,2 @@
+funcao trasferir.comm(comm):
+    comm.restaurante = float(precototal - comm)

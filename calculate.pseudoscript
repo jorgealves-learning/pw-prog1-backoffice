@@ -1,0 +1,3 @@
+funcao calcular.comm(precototal):
+    resultado = precototal / 10
+    comm = float(precototal - resultado)

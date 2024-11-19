@@ -1,0 +1,7 @@
+modelo Pedidos:
+
+funcao criar_pedido(ticket):
+    messagem.restaurante = imprime("Ordem ticket: {ticket}")
+    cada restaurante em ticket:
+        imprime({messagem.restaurante})
+    retorne

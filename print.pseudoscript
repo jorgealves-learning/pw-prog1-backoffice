@@ -1,0 +1,1 @@
+imprime("Valor total pago: €{precototal}\nValor da comissão: €{comm}\nValor para transferir ao restaurante: €{comm.restaurante}")

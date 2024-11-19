@@ -11,3 +11,5 @@ funcao AddNewUser(email, password):
         User.password = password
         se User.email EM User.listausers.chaves():
             crash("O email já existe. Tente Novamente")
+        se User.email NAO verificado
+            crash("O email nao é valido. Insere outro email")

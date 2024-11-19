@@ -1,0 +1,7 @@
+importar Billing
+
+modelo User:
+    construtor(email, password):
+        User.email = email
+        User.password = password
+        User.listausers = ()

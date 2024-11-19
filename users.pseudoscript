@@ -8,3 +8,4 @@ modelo User:
 
 funcao AddNewUser(email, password):
         User.email = email
+        User.password = password

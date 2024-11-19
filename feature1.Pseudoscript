@@ -1,0 +1,3 @@
+Classe Restaurantes:
+    Construtor(nome, menu):
+        Restaurantes.Lista = (Restaurantes[Status, Menu(Comidas[Valor, Status])])

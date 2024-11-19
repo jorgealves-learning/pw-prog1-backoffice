@@ -1,0 +1,13 @@
+modelo Comissao:
+    construtor(precototal, comm):
+    Comissao.PrecoTotal = precototal
+    Comissao.Comm = comm
+
+funcao calcular.comm(precototal):
+    resultado = precototal / 10
+    comm = float(precototal - resultado)
+
+funcao trasferir.comm(comm):
+    comm.restaurante = float(precototal - comm)
+
+imprime("Valor total pago: €{precototal}\nValor da comissão: €{comm}\nValor para transferir ao restaurante: €{comm.restaurante}")

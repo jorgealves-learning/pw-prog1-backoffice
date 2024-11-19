@@ -1,0 +1,4 @@
+modelo Comissao:
+    construtor(precototal, comm):
+    Comissao.PrecoTotal = precototal
+    Comissao.Comm = comm

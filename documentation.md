@@ -6,5 +6,5 @@
 
 ## 0.3.0 Comission auto transfer has been added to the feature. Amount is auto transfered to client after payment.
 
-
+## 0.4.0 Added new feature for double checking payments. If the payment isn't complete, user must pay to get order, receipt.
 

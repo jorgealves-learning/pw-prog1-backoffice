@@ -16,3 +16,5 @@ funcao AddNewUser(email, password):
         se User.password NAO cumpre requisitos:
             crash("A password deve cumprir os requisitos")
          User.listausers[User.email] = User.password
+
+ funcao ListarPedidos()

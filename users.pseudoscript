@@ -1,0 +1,26 @@
+importar Billing
+
+modelo User:
+    construtor(email, password):
+        User.email = email
+        User.password = password
+        User.listausers = ()
+
+funcao AddNewUser(email, password):
+        User.email = email
+        User.password = password
+        se User.email EM User.listausers.chaves():
+            crash("O email já existe. Tente Novamente")
+        se User.email NAO verificado
+            crash("O email nao é valido. Insere outro email")
+        se User.password NAO cumpre requisitos:
+            crash("A password deve cumprir os requisitos")
+        User.listausers[User.email] = User.password
+
+funcao ListarPedidos()
+        cada recibo em Billing.Processar_pagamentos.recibos[User.email]
+            imprime("{User.Email}
+                {Processar_pagamento.recibos[User.Email].data}
+                {Processar_pagamento.recibos[User.Email].preco_final}
+                {Processar_pagamento.recibos[User.Email].restaurante}"
+                            )

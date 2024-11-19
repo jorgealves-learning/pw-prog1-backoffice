@@ -13,3 +13,5 @@ funcao AddNewUser(email, password):
             crash("O email já existe. Tente Novamente")
         se User.email NAO verificado
             crash("O email nao é valido. Insere outro email")
+        se User.password NAO cumpre requisitos:
+            crash("A password deve cumprir os requisitos")

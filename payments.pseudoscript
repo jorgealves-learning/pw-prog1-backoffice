@@ -29,6 +29,14 @@ modelo Processar_pagamento:
                         crash("Tem de inerir um método de pagamento")
 
 
+    funcao verificar_pagamento():
+            se ticket[estado] == FALSE:
+                imprime("O pedido ainda não está pago")
+                    pagar()
+            se ticket[estado] == TRUE:´
+                criar_recibo()
+
+
 
   funcao calcular_comm(preco_final):
         resultado = preco_final / 15

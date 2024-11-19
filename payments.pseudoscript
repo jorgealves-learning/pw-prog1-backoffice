@@ -37,6 +37,18 @@ modelo Processar_pagamento:
                 criar_recibo()
 
 
+    funcao criar_recibo():
+            verificar_pagamento()
+            Processar_pagamento.recibos[email].valor = (ticket)
+                imprime("
+                        ====== RECIBO DE {Processar_pagamento.recibos[email].restaurante} ======
+                        =============================================
+                        {Processar_pagamento.recibos[email].preco_final}
+                        ")
+
+            transferir_comm(preco_final)
+
+
 
   funcao calcular_comm(preco_final):
         resultado = preco_final / 15

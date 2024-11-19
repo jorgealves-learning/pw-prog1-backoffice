@@ -5,3 +5,6 @@ modelo User:
         User.email = email
         User.password = password
         User.listausers = ()
+
+funcao AddNewUser(email, password):
+        User.email = email

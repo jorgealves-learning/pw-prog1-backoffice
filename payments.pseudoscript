@@ -1,0 +1,63 @@
+importar Users como user # importa o modelo de criação de users
+
+all_user = Users.User()
+
+modelo Processar_pagamento:
+    construtor(preco_final, comm):
+    Comissao.comm = comm
+    Processar_pagamento.recibos = ()
+
+    funcao Pagar(ticket):
+        preco_final = 0   
+            
+        para cada prato, preco em ticket:
+            preco_final += preco
+
+            imprime("O total do seu carrinho é de {preco_final}. Vamos proceder ao pagamento")
+                entrada("Escolhe uma opcao de pagamento
+                        1. MB
+                        2. APPLE PAY" , opcao)
+                    se opcao == 1
+                        imprime("Pagamento por Multibanco feito.")
+                            ticket[estado] == TRUE
+                            criar_recibo()
+                    se opcao == 2
+                        imprime("Pagamento por Apple Pay feito.")
+                            ticket[estado] == TRUE
+                            criar_recibo()
+                    se opcao != 1 OU opcao != 2
+                        crash("Tem de inerir um método de pagamento")
+
+
+    funcao verificar_pagamento():
+            se ticket[estado] == FALSE:
+                imprime("O pedido ainda não está pago")
+                    pagar()
+            se ticket[estado] == TRUE:´
+                criar_recibo()
+
+
+    funcao criar_recibo():
+            verificar_pagamento()
+            
+            Processar_pagamento.recibos[email].valor = (ticket)
+                imprime("
+                        ====== RECIBO DE {Processar_pagamento.recibos[email].restaurante} ======
+                        =============================================
+                        ============ {Processar_pagamento.recibos[email].email} ============
+                        ============ {Processar_pagamento.recibos[email].data} ============
+                        {Processar_pagamento.recibos[email].preco_final}
+                        ")
+
+            transferir_comm(preco_final)
+
+
+  funcao calcular_comm(preco_final):
+        resultado = preco_final / 15
+        Comissao.comm = float(preco_final - resultado)
+
+    funcao transferir_comm(comm):
+        calcular_comm(preco_final)
+        comm.restaurante = float(preco_final - Comissao.comm)
+
+        imprime("Valor total pago: €{preco_final}\nValor da comissão: €{Comissao.comm}\nValor para transferir ao restaurante: €{comm.restaurante}")
